@@ -5,7 +5,7 @@ pipeline {
             steps {
                 withAWS(credentials:'aws-static') {
                     // do something
-                    s3Upload(file:'index.html', bucket:'uiruninja-static', path:'./index.html')
+                    s3Upload(file:'index.html', bucket:'uiruninja-static', path:'index.html')
                 }
             }
         }
